@@ -1,0 +1,141 @@
+body{
+    font-family: 'Oswald', sans-serif;
+}
+
+.login-design{
+    display: grid;
+    grid-template-columns: repeat(3,33%);
+    height: 100vh;
+}
+.columna-izquierda{
+
+    background-image: url(../img/moltres.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.login-formulario{ 
+    position: relative;
+    top: 350px;
+    right: 25px;
+    text-align:center;
+}
+
+
+.columna-derecha{
+
+    background-image: url(../img/Ho-oh.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    
+}
+
+.columna-central-login {
+    position: relative;
+    background-image: url(../img/logo\ pokemon.jpg);
+    background-repeat: no-repeat;
+    align-items: center;
+    ;
+}
+.columna-central-login h1 {
+    position: relative;
+    top: 350px;
+    right: 25px;
+    text-align: center;
+    font-weight: 700;
+    transform: translateX(20px);
+}
+
+.input-group{
+    position: relative;
+    width: 60%;
+    bottom: 80%;
+    margin: 0 auto;
+    margin-bottom: 3px
+}
+
+.input-fill input{
+    border:  none;
+    border-bottom: 3px solid #fee440;
+    width: 100%;
+    height: 2.25rem;
+    font-size: 1.15rem;
+    padding-left: 2rem;
+    line-height: 150.5%;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: .85;
+}
+
+.input-fill input:focus{
+    outline: none;
+    border-color: #003566 ;
+}
+.input-fill input:hover{
+    background-color: #edf6f9;
+}
+.input-fill input:focus ~ .input-lable,
+.input-fill input:valid ~ .input-lable{
+    transform: translateY(-1px) translateX(-22px);
+    top: 0;
+    margin-bottom: 2rem;
+    color: #003566;
+    transition: .35s;
+    font-size: 15px;
+}
+.input-fill input:focus ~ i{
+    color: #ffd60a;
+}
+.input-fill .input-lable{
+    position: absolute;
+    top: 15px;
+    left: 35px;
+    line-height: 100.5%;
+    color: #003566;
+    transition: top .2s;
+    font-weight: 700;
+}
+.input-fill i{
+    position: absolute;
+    top: 15px ;
+    left: 2px;
+    color: #003566;
+    font-size: 1.2rem;
+}
+
+.login-formulario a{
+    display: block;
+    width: 85%;
+    text-align: right;
+    text-decoration: none;
+    color: #003566;
+    margin-bottom: 1.4rem;
+    font-weight: 700;
+    transition: .3s ease-in-out all;
+    font-size: 16px;
+}
+
+.login-formulario a:hover{
+    color: #fee440;
+}
+
+.btn-login{
+    position: relative;
+    left: 18px;
+    border-radius: 2rem;
+    width: 55%;
+    border: 1px solid #003566;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+    background-color: #003566;
+    color: #ffd60a;
+    padding: 0.5rem 0;
+    transition: .2s ease-in-out all;
+    font-weight: 500;
+}
+.btn-login:hover {
+    cursor: pointer;
+    background-color: #ffd60a;
+    color: #003566;
+} 
